@@ -1,0 +1,5 @@
+D:\t$m$p$$$\dwarf_2_3dsmax9_low_mr_sl.max
+D:\t$m$p$$$\MAXFILES.TXT
+D:\textures\dwarf_2_1K_color.jpg
+D:\textures\dwarf_2_1K_Specular.tif
+D:\textures\dwarf_2_1K_bump.tif
