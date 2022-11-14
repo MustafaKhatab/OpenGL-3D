@@ -24,7 +24,7 @@ bool start = false;
 bool right = false;
 bool leftCheck = false;
 bool rightCheck = false;
-double rockCounter = 15;
+double rockCounter = 3;
 bool isInitialized = false;
 
 const int numberOfBalls = 20;
@@ -523,12 +523,12 @@ void anim() {
 
 		if (rockCounter > 0)
 		{
-			rockCounter -= 0.03;
+			
 		}
 		else
 		{
 			initializeArray();
-			rockCounter = 15;
+			rockCounter = 2.5;
 			isHitted = false;
 			notEntered = true;
 		}
@@ -570,7 +570,7 @@ void anim() {
 				right = false;
 				leftCheck = false;
 				rightCheck = false;
-				rockCounter = 15;
+				rockCounter = 2.5;
 				isInitialized = false;
 			}
 		}
@@ -580,41 +580,41 @@ void anim() {
 		// middle Column
 		if (((counterLeft) <= 0.6 && (counterLeft) >= 0.5) || ((counterRight) <= 0.6 && (counterRight) >= 0.5)) {
 			if (array[index]) {
-				if (rockCounter <= (3 - (0.02 - scaleFactor) * 100)) {
+				
 					isHitted = true;
-				}
+				
 			}
 		}
 		//first right column 
 		if ((counterLeft) >= -3.8 && (counterLeft) <= -3.7) {
 			if (array1[index]) {
-				if (rockCounter <= (3 - (0.02 - scaleFactor) * 100)) {
+				
 					isHitted = true;
-				}
+				
 			}
 		}
 		//second right column 
 		if ((counterLeft) >= -8.1 && (counterLeft) <= -8.0) {
 			if (array2[index]) {
-				if (rockCounter <= (3 - (0.02 - scaleFactor) * 100)) {
+				
 					isHitted = true;
-				}
+			
 			}
 		}
 		//first left column 
 		if ((counterRight) <= 4.8 && (counterLeft + counterRight) >= 4.7) {
 			if (array3[index])
 			{
-				if (rockCounter <= (3 - (0.02 - scaleFactor) * 100)) {
+				
 					isHitted = true;
-				}
+				
 
 			}
 		}
 		//second left column 
 		if ((counterRight) <= 9.1 && (counterRight) >= 9.00001) {
 			if (array4[index]) {
-				if (rockCounter <= (3-(0.02- scaleFactor) *100) ) {
+				if (rockCounter <= (2-(0.02- scaleFactor) *100) ) {
 					isHitted = true;
 				}
 			}
